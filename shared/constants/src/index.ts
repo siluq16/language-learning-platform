@@ -1,0 +1,22 @@
+export const API_VERSION = 'v1';
+export const API_BASE_PREFIX = '/api/v1';
+
+export const ERROR_CODES = {
+  AUTH_REQUIRED: 'AUTH_REQUIRED',
+  AUTH_INVALID_TOKEN: 'AUTH_INVALID_TOKEN',
+  AUTH_ACCOUNT_SUSPENDED: 'AUTH_ACCOUNT_SUSPENDED',
+  FORBIDDEN: 'FORBIDDEN',
+  NOT_FOUND: 'NOT_FOUND',
+  COURSE_ACCESS_DENIED: 'COURSE_ACCESS_DENIED',
+  VALIDATION_ERROR: 'VALIDATION_ERROR',
+  INTERNAL_SERVER_ERROR: 'INTERNAL_SERVER_ERROR',
+} as const;
+
+export const STORAGE_BUCKETS = {
+  AVATARS: 'avatars',
+  PUBLIC_CONTENT: 'public-content',
+  LESSON_MEDIA: 'lesson-media',
+  SPEAKING_SUBMISSIONS: 'speaking-submissions',
+  RESOURCES: 'resources',
+  CERTIFICATES: 'certificates',
+} as const;
